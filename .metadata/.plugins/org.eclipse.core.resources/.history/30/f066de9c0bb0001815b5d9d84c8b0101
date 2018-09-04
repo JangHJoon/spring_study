@@ -1,0 +1,10 @@
+package org.green.crud1;
+
+import org.springframework.stereotype.Controller;
+
+
+// controller 클래스라는 것을 알려주는 어노테이션
+@Controller
+public class MyController {
+
+}

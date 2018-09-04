@@ -1,0 +1,31 @@
+package org.green.crud1;
+
+import java.sql.Connection;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+// bean : 스프링이 관리하는 자바 객체
+//
+// controller 클래스라는 것을 알려주는 어노테이션
+// --> bean으로 등록 되었다.
+@Controller
+public class MyController {
+
+	// 2개의 주소 처리
+	@RequestMapping({"/", "/goList"})
+	public String goList(){
+		TeacherDAO dao = TeacherDAO.getInstance();
+		Connection con = dao.connect();
+		List<Teacher> list = dao.getAll(con);
+		dao.close(con);
+		return "list";
+	}
+	
+	@RequestMapping("/goInsert")
+	public String goInsert() {
+		return "insert";
+	}
+}
