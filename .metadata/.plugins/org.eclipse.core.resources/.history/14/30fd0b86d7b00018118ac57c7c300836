@@ -1,0 +1,5 @@
+package org.green.di;
+
+public class Ball {
+
+}
