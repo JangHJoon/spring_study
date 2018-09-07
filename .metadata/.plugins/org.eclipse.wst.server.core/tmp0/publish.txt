@@ -1,4 +1,0 @@
-#Tomcat publish data
-#Tue Sep 04 17:42:22 KST 2018
-org.eclipse.jst.jee.server\:crud1=C\:\\Users\\Administrator\\Downloads\\sts-bundle\\pivotal-tc-server-developer-3.1.0.RELEASE\\base-instance\\wtpwebapps\\crud1
-org.eclipse.jst.jee.server\:09_04=C\:\\Users\\Administrator\\Downloads\\sts-bundle\\pivotal-tc-server-developer-3.1.0.RELEASE\\base-instance\\wtpwebapps\\09_04
